@@ -7,21 +7,23 @@ namespace InchesToFeet
 {
     class Program
     {
-        public static void totalFeet(int inches)
+        public static void totalYards(int inches)
         {
-            int feet,inch;
+            int feet, inch, yard;
 
             feet = inches / 12;
-            
+
+            yard = feet / 3;
+
             inch = inches % 12;
 
-            Console.WriteLine("{0} feet and {1} inches", feet, inch); 
+            Console.WriteLine("{0} yards {1} feet and {2} inches", yard, feet, inch);
         }
 
         static void Main(string[] args)
         {
             int inches = 67;
-            totalFeet(inches);
+            totalYards(inches);
         }
     }
 }
